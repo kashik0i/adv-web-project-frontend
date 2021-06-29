@@ -1,5 +1,5 @@
 import React, { useState,useEffect } from "react";
-import { TextField, Button, Typography, Paper,Box } from "@material-ui/core";
+import { TextField, Button, Typography, Paper } from "@material-ui/core";
 import FileBase from "react-file-base64";
 import { useDispatch,useSelector } from "react-redux";
 import useStyles from "./styles";
@@ -118,25 +118,6 @@ const Form = ({currentId,setCurrentId}) => {
         >
           Clear
         </Button>
-        <Box component="div" display="flex" width="100%"  >
-        <Button
-          variant="contained"
-          size="small"
-          onClick={()=>{/*login*/ }}
-          fullWidth
-        >
-          Login
-        </Button>
-        <Button
-        
-          variant="contained"
-          size="small"
-          onClick={()=>{/*register*/}}
-          fullWidth
-        >
-          Register
-        </Button>
-        </Box>
       </form>
     </Paper>
   );
